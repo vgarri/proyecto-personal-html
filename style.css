@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+  }
+h2 {
+    text-align: center;
+  } 
+
+/* unvisited link */
+a:link, a:visited, a:hover {
+    background-color:blueviolet;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+   
+    
+   
+}
+    /* mouse over link */
+a:hover {
+    color:violet;
+  }
+.divanchor {
+    text-align: center;
+  }
