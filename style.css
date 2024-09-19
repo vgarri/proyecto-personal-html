@@ -1,20 +1,20 @@
 h1 {
     text-align: center;
+    font-size: 90px;
   }
 h2 {
     text-align: center;
   } 
 
 /* unvisited link */
-a:link, a:visited, a:hover {
+a:link, a:visited {
     background-color:blueviolet;
+    border-radius: 400px;
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-   
     
-   
 }
     /* mouse over link */
 a:hover {
@@ -23,3 +23,7 @@ a:hover {
 .divanchor {
     text-align: center;
   }
+p {
+  text-align: justify;
+  word-spacing: double;
+}
