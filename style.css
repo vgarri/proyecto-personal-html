@@ -1,10 +1,19 @@
 h1 {
     text-align: center;
-    font-size: 90px;
+    font-size: 60px;
   }
 h2 {
     text-align: center;
   } 
+.bggradient {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(18, 16, 17, 0.73));
+  background-size: cover;
+}
+body, html {
+  background-image: linear-gradient(to bottom, white, rgb(59, 57, 57)); 
+  background-size: cover;
+  height: 100%;
+}
 
 /* unvisited link */
 a:link, a:visited {
@@ -22,8 +31,26 @@ a:hover {
   }
 .divanchor {
     text-align: center;
+    position:relative;
   }
+.divanchorbottom {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
 p {
   text-align: justify;
-  word-spacing: double;
+  /*display: flex;*/
+  height: auto;
+  width: 950px;
+  display: flex;
+  margin: auto;
+  
+}
+.divimage {
+  display: flex;
+
+}
+img {
+
 }
