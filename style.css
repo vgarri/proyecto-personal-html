@@ -4,11 +4,13 @@ cursor: url('data:image/x-icon;base64,AAACAAEAICACAAIABAAwAQAAFgAAACgAAAAgAAAAQA
 
 }
 header {
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   font-size: xx-large;
   font-weight: bolder;
+  position: relative;
+  margin: 0 auto;
 }
 
 
@@ -16,10 +18,12 @@ header {
 h1 {
   text-align: center;
   font-size: 60px;
+  margin: 0 auto;
 }
 
 h2 {
   text-align: center;
+  margin: 0 auto;
 }
 
 body {
@@ -28,14 +32,16 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+a{
+  text-align: center;
+  text-decoration: none;
 
+}
 /* unvisited link */
 a:link,
 a:visited {
-  background-color: #C8B6FF;
-  border-radius: 400px;
-  color: white;
-  padding: 14px 25px;
+
+  color: #000000;
   text-align: center;
   text-decoration: none;
 
@@ -50,12 +56,9 @@ divanchor, divanchorbottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 10px;
+  gap: 25px;
+  margin: 0 auto;
 
-}
-
-burgermenu {
-  
 }
 
 .divform > .divtext {
@@ -74,8 +77,58 @@ p {
 form {
   font-size: large;
 }
+img {
+  display: block;
+  max-width: 30%; 
+  height: auto;
+  object-fit: contain;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+divimage {
+  outline:90px #BBD0FF;
+  display: inline-block;
 
-.divimage {
-  display: flex;
+  box-shadow: #C8B6FF;
+  padding: auto;
+  margin: auto;
+}
 
+/* menu hamburguesa*/
+ul{
+  display: none;
+
+  
+}
+input {
+  display: none;
+ }
+input:checked  ~ ul{
+  position: absolute;
+  top: 1%; left: 5%;
+  display:block;
+  transition: all 0.5s;
+}
+label {
+  position: absolute;
+  top: 1%; left: 5%;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #B8C0FF;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+li {
+
+  display: flexbox;
+  background:#B8C0FF ;
+  margin: 0 auto;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid #B8C0FF;
 }
