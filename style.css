@@ -1,24 +1,32 @@
+:root {
+  --rosa: #FFD6FF;
+  --rosa2: #E7C6FF;
+  --lila: #C8B6FF;
+  --azulito: #B8C0FF;
+  --azul: #BBD0FF;
+}
+
 *,html{
 font-family: 'Monaco', monospace;
-cursor: url('data:image/x-icon;base64,AAACAAEAICACAAIABAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAHAAAABwAAAA4AAAAOAAAAHAAAABwAAAQ4AAAGOAAAB3AAAAfwAAAH/4AAB/8AAAf+AAAH/AAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////+P////B////wf///4P///+D///fB///zwf//8YP///CD///wB///8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3/////////////////////////8='), auto;
-
+/*cursor: url('data:image/x-icon;base64,AAACAAEAICACAAIABAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAHAAAABwAAAA4AAAAOAAAAHAAAABwAAAQ4AAAGOAAAB3AAAAfwAAAH/4AAB/8AAAf+AAAH/AAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////+P////B////wf///4P///+D///fB///zwf//8YP///CD///wB///8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3/////////////////////////8='), auto;
+*/
+cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAq0wyALKw9wCFgugA////AHi6dQAGjwEABQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmZmZmZmAAAAAAAAAAAGZVVVVVVVVWYAAAAAAAAAZVVVVVVVVVVVYAAAAAAABlVVVVVVVVVVVVYAAAAAAAZVVVVVVVVVVVVWAAAAAAAGVVVVVVVVVVVVVgAAAAAAZVVVVVVVVVVVVVVgAAAAAGVVVVVVU1VVVVVVYAAAAABlVVVVVTI1VVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTIiNVVVVVYAAAAABlVVVVUyIjVVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTMzNVVVVVYAAAAAAGVXdVVVVVVVd1VgAAAAAABlcXdVVVVVVxd1YAAAAAAAZXdHVVVVVVd0dWAAAAAAAAZXdVZmZmZVd1YAAAAAAAAGVVVgAAAAZVVWAAAAAGAAAGZmAAAAAAZmYAAAAABmAAAAAAAAAAAAAAAAAAAAZmAAAAAAAAAAAAAAAAAAAGZmAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////////AAf//AAB//gAAP/wAAB/8AAAf/AAAH/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP/AAAH/wAAB/8AAAf/gAAP/4H8D/fD/h/z////8f////D////w=='), auto;
 }
 header {
-  justify-content: center;
+
   display: flex;
-  flex-wrap: wrap;
-  font-size: xx-large;
-  font-weight: bolder;
-  position: relative;
-  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+
 }
 
 
 
 h1 {
   text-align: center;
-  font-size: 60px;
-  margin: 0 auto;
+  font-size: 70px;
+  font-weight: bolder;
+
 }
 
 h2 {
@@ -27,16 +35,22 @@ h2 {
 }
 
 body {
-  background-color: #FFD6FF;
-  justify-content: space-around;
+  
+  background: linear-gradient(#FFD6FF,#C8B6FF,#E7C6FF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+
 }
 a{
   text-align: center;
   text-decoration: none;
-
 }
+
+
 /* unvisited linkk */
 a:link,
 a:visited {
@@ -61,8 +75,41 @@ divanchor, divanchorbottom {
 
 }
 
+divlink {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-count: 4;
+  gap: 60px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: #B8C0FF;
+  padding: 1.1%;
+  outline: none;
+
+
+
+
+}
+
 .divform > .divtext {
   display: flex;
+}
+footer {
+  display: flexbox;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#B8C0FF;
+  color: white;
+  text-align: center;
+  gap: 50px;
+}
+divfooter > a{
+  
 }
 
 p {
@@ -74,24 +121,61 @@ p {
 .specialp {
   font-size: large;
 }
-form {
-  font-size: large;
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+select,
+textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 img {
-  display: block;
-  max-width: 30%; 
+  display: flex;
+  
+  max-width: 60%; 
   height: auto;
-  object-fit: contain;
-  border-radius: 100px;
+  border-radius: 900px;
   margin: 0 auto;
+  justify-content: center;
 }
 divimage {
   outline:90px #BBD0FF;
-  display: inline-block;
-
+  display: flex;
+  flex-wrap: wrap;
   box-shadow: #C8B6FF;
-  padding: auto;
-  margin: auto;
+  padding: 18%;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+
+divportfolio {
+  display: grid;
+  grid-template-columns: 
+    repeat (
+      auto-fit,
+      minmax(150px, 1fr)
+    );
+  gap: 32px;
+}
+divportfolio > img,figure{
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 30px #BBD0FF;
+
+
 }
 
 /* menu hamburguesa*/
@@ -114,8 +198,6 @@ label {
   top: 1%; left: 5%;
   box-sizing: border-box;
   display: inline-block;
-  border: 1px solid #B8C0FF;
-  border-radius: 100px;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -132,3 +214,63 @@ li {
   list-style: none;
   border-bottom: 1px solid #B8C0FF;
 }
+
+@media only screen and (min-width: 700px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="submit"],
+  select,
+  textarea {
+    width: 80%;
+    height: 45px;
+  }
+
+  * {
+    font-size: 1.2rem;
+  }
+
+  #main_picture {
+    width: 70%; 
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="submit"],
+  select,
+  textarea {
+    width: 50%;
+  }
+
+  * {
+    font-size: 1.6rem;
+  }
+
+  #main_picture {
+    width: 45%; 
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="submit"],
+  select,
+  textarea {
+    width: 50%;
+  }
+
+  * {
+    font-size: 1.6rem;
+  }
+
+  #main_picture {
+    width: 45%; 
+  }
+}
+
