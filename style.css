@@ -186,7 +186,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
 
-  gap: 3px;
+  gap: 15px;
 }
 divbiografia > img{
   border-radius: 8px;
