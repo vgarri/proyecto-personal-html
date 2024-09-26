@@ -15,31 +15,45 @@
     <header>
     <h1>Contacto</h1>
     </header>
+    <h3> Rellena este formulario para ponerte en contacto conmigo:</h3>
     <div class="divtext">
-        <p> Rellena este formulario para ponerte en contacto conmigo:</p>
+        
     </div>
     
-    <div class = "divform">
-        
-           
-            <input type="text" id="fname" name="fname">
+    <formulario>
+            <form action="/action_page.php">
+              <label class="label" for="fname">Tu nombre</label>
+              <input type="text" id="fname" name="firstname" placeholder="Nombre">
+          
+              <label  class="label" for="lname">Apellidos</label>
+              <input type="text" id="lname" name="lastname" placeholder="Apellidos">
+                
+              <label class="label" for="email">email</label>
+              <input type="email" id="lname" name="email" placeholder="Pon aquí tu email">
+              <label  class="label" for="elige">Te ha gustado la web?</label>
+              <select id="country" name="country">
+                <option value="Si">Sí :)</option>
+                <option value="No">No :(</option>
+              </select>
             
-            <input type="text" id="lname" name="lname">
-            
-            <input type="email" id="email" name="email">
-        
+              <input type="submit" value="Enviar">
+            </form>
+    </formulario>
 
-    </div>
 
-<nav>
-    <input type="checkbox" id="menu">
-    <label for="menu"> ☰ </label>
-    <ul>
-        <li> <a href="./index.html">Home</a></li>
-        <li> <a href="./portfolio.html">Portfolio</li>
-        <li> <a href="./biografia.html">Biografía</li>
-    </ul>
-  </nav>
+
+
+
+
+<burger>
+        <input type="checkbox" id="menu">
+        <label for="menu"> ☰ </label>
+        <ul>
+            <li class ="li"> <a href="./index.html">Home</li>
+            <li class ="li"> <a href="./portfolio.html">Portfolio</li>
+            <li class ="li"> <a href="./biografia.html">Biografía</li>
+        </ul>
+</burger>
 
 
 

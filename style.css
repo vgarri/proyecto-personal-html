@@ -14,8 +14,9 @@ cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQA
 header {
 
   display: flex;
-  width: 85%;
+  width: 75%;
   justify-content: center;
+  border: 2%;
 
 }
 
@@ -25,6 +26,7 @@ h1 {
   text-align: center;
   font-size: 70px;
   font-weight: bolder;
+
 
 }
 
@@ -45,7 +47,7 @@ body {
 
 }
 a{
-  text-align: center;
+  
   text-decoration: none;
 }
 
@@ -97,19 +99,21 @@ divlink {
   justify-content: center;
 }
 footer {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-evenly;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4%;
+  height: 2.5%;
   background-color:#B8C0FF;
   color: white;
-  text-align: center;
-  padding: 0.8% 0%;
+  padding: 0.8%;
   box-shadow: 0px 0px 300px #C8B6FF;
-  justify-content: space-evenly;
+  gap: 50px;
 }
 divfooter > a{
   
@@ -182,21 +186,21 @@ divportfolio > img,figure{
 }
 
 /* menu hamburguesa*/
-ul{
+burger > ul{
   display: none;
 
   
 }
-input {
+burger > input {
   display: none;
  }
-input:checked  ~ ul{
+burger > input:checked  ~ ul {
   position: absolute;
   top: 1%; left: 5%;
   display:block;
   transition: all 0.5s;
 }
-label {
+burger > label {
   position: absolute;
   top: 1%; left: 5%;
   box-sizing: border-box;
@@ -208,7 +212,7 @@ label {
   text-align: center;
   user-select: none;
 }
-li {
+.li {
 
   display: flexbox;
   background:#B8C0FF ;
@@ -217,4 +221,52 @@ li {
   list-style: none;
   border-bottom: 1px solid #B8C0FF;
 }
+
+formulario {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+formulario > input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flexbox;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+formulario > input[type=submit] {
+  width: 60%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+formulario > input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+formulariodiv {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 
