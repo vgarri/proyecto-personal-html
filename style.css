@@ -82,13 +82,14 @@ divlink {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   text-decoration: none;
   border-radius: 100px;
   background-color: #B8C0FF;
-  padding: 1.1%;
-  outline: none;
+  padding: 2.5%;
+  border: #BBD0FF;
+  gap: 40px;
 
 
 
@@ -149,10 +150,11 @@ textarea {
 
 img {
   display: flex;
-  box-shadow: 0px 0px 35px #C8B6FF;
+  box-shadow: 0px 0px 35px #000000;
   max-width: 60%; 
   height: auto;
   border-radius: 900px;
+  border: 10px  #000000;
   margin: 0 auto;
   justify-content: center;
 }
