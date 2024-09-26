@@ -185,6 +185,21 @@ divportfolio > img,figure{
 
 
 }
+divbiografia{
+display: grid;
+  grid-template-columns: 
+    repeat (
+      auto-fit,
+      minmax(10px, 1fr)
+    );
+  gap: 32px;
+}
+divbiografia > img{
+  border-radius: 8px;
+  width: 40%;
+  height: auto;
+  box-shadow: 0px 0px 30px #BBD0FF;
+}
 
 /* menu hamburguesa*/
 burger > ul{
