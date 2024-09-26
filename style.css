@@ -14,9 +14,10 @@ cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQA
 header {
 
   display: flex;
-  width: 75%;
+  width: 100%;
   justify-content: center;
   border: 2%;
+  
 
 }
 
@@ -24,9 +25,8 @@ header {
 
 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 65.4px;
   font-weight: bolder;
-  width: 75%;
 
 
 }
@@ -200,7 +200,7 @@ burger > input:checked  ~ ul {
   transition: all 0.5s;
 }
 burger > label {
-  font-size: 300%;
+  font-size: xx-large;
   position: absolute;
   top: 1%; left: 5%;
   box-sizing: border-box;
@@ -239,9 +239,9 @@ formulario > input[type=text], select {
   box-sizing: border-box;
 }
 select {
-  width: 60%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 30%;
+  
+  margin: 20px auto;
   display: flexbox;
   justify-content: center;
   border: 1px solid #ccc;
