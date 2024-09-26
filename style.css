@@ -129,12 +129,7 @@ p {
 .specialp {
   font-size: large;
 }
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 input[type="text"],
 input[type="email"],
@@ -186,17 +181,16 @@ divportfolio > img,figure{
 
 }
 divbiografia{
-display: grid;
-  grid-template-columns: 
-    repeat (
-      auto-fit,
-      minmax(10px, 1fr)
-    );
-  gap: 32px;
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+  gap: 3px;
 }
 divbiografia > img{
   border-radius: 8px;
-  width: 40%;
+  width: 300px;
   height: auto;
   box-shadow: 0px 0px 30px #BBD0FF;
 }
