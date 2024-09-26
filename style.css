@@ -8,14 +8,13 @@
 
 *,html{
 font-family: 'Monaco', monospace;
-/*cursor: url('data:image/x-icon;base64,AAACAAEAICACAAIABAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAHAAAABwAAAA4AAAAOAAAAHAAAABwAAAQ4AAAGOAAAB3AAAAfwAAAH/4AAB/8AAAf+AAAH/AAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////+P////B////wf///4P///+D///fB///zwf//8YP///CD///wB///8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3/////////////////////////8='), auto;
-*/
+
 cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAq0wyALKw9wCFgugA////AHi6dQAGjwEABQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmZmZmZmAAAAAAAAAAAGZVVVVVVVVWYAAAAAAAAAZVVVVVVVVVVVYAAAAAAABlVVVVVVVVVVVVYAAAAAAAZVVVVVVVVVVVVWAAAAAAAGVVVVVVVVVVVVVgAAAAAAZVVVVVVVVVVVVVVgAAAAAGVVVVVVU1VVVVVVYAAAAABlVVVVVTI1VVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTIiNVVVVVYAAAAABlVVVVUyIjVVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTMzNVVVVVYAAAAAAGVXdVVVVVVVd1VgAAAAAABlcXdVVVVVVxd1YAAAAAAAZXdHVVVVVVd0dWAAAAAAAAZXdVZmZmZVd1YAAAAAAAAGVVVgAAAAZVVWAAAAAGAAAGZmAAAAAAZmYAAAAABmAAAAAAAAAAAAAAAAAAAAZmAAAAAAAAAAAAAAAAAAAGZmAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////////AAf//AAB//gAAP/wAAB/8AAAf/AAAH/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP/AAAH/wAAB/8AAAf/gAAP/4H8D/fD/h/z////8f////D////w=='), auto;
 }
 header {
 
   display: flex;
-  width: 100%;
+  width: 85%;
   justify-content: center;
 
 }
@@ -58,6 +57,7 @@ a:visited {
   color: #000000;
   text-align: center;
   text-decoration: none;
+  
 
 }
 
@@ -79,8 +79,6 @@ divlink {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  column-count: 4;
-  gap: 60px;
   margin: auto;
   text-align: center;
   text-decoration: none;
@@ -94,19 +92,24 @@ divlink {
 
 }
 
-.divform > .divtext {
+.divtext {
   display: flex;
+  justify-content: center;
 }
 footer {
-  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 4%;
   background-color:#B8C0FF;
   color: white;
   text-align: center;
-  gap: 50px;
+  padding: 0.8% 0%;
+  box-shadow: 0px 0px 300px #C8B6FF;
+  justify-content: space-evenly;
 }
 divfooter > a{
   
@@ -115,7 +118,8 @@ divfooter > a{
 p {
   text-align: justify;
   justify-content: center;
-  padding: 20px 20px 20px 20px;
+  width: 85%;
+  font-size: medium;
 
 }
 .specialp {
@@ -142,7 +146,7 @@ textarea {
 
 img {
   display: flex;
-  
+  box-shadow: 0px 0px 35px #C8B6FF;
   max-width: 60%; 
   height: auto;
   border-radius: 900px;
@@ -153,7 +157,6 @@ divimage {
   outline:90px #BBD0FF;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: #C8B6FF;
   padding: 18%;
   margin: 0 auto;
   justify-content: center;
