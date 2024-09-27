@@ -6,18 +6,20 @@
   --azul: #BBD0FF;
 }
 
-*,html{
-font-family: 'Monaco', monospace;
+*,
+html {
+  font-family: 'Monaco', monospace;
 
-cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAq0wyALKw9wCFgugA////AHi6dQAGjwEABQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmZmZmZmAAAAAAAAAAAGZVVVVVVVVWYAAAAAAAAAZVVVVVVVVVVVYAAAAAAABlVVVVVVVVVVVVYAAAAAAAZVVVVVVVVVVVVWAAAAAAAGVVVVVVVVVVVVVgAAAAAAZVVVVVVVVVVVVVVgAAAAAGVVVVVVU1VVVVVVYAAAAABlVVVVVTI1VVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTIiNVVVVVYAAAAABlVVVVUyIjVVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTMzNVVVVVYAAAAAAGVXdVVVVVVVd1VgAAAAAABlcXdVVVVVVxd1YAAAAAAAZXdHVVVVVVd0dWAAAAAAAAZXdVZmZmZVd1YAAAAAAAAGVVVgAAAAZVVWAAAAAGAAAGZmAAAAAAZmYAAAAABmAAAAAAAAAAAAAAAAAAAAZmAAAAAAAAAAAAAAAAAAAGZmAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////////AAf//AAB//gAAP/wAAB/8AAAf/AAAH/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP/AAAH/wAAB/8AAAf/gAAP/4H8D/fD/h/z////8f////D////w=='), auto;
+  cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAq0wyALKw9wCFgugA////AHi6dQAGjwEABQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmZmZmZmAAAAAAAAAAAGZVVVVVVVVWYAAAAAAAAAZVVVVVVVVVVVYAAAAAAABlVVVVVVVVVVVVYAAAAAAAZVVVVVVVVVVVVWAAAAAAAGVVVVVVVVVVVVVgAAAAAAZVVVVVVVVVVVVVVgAAAAAGVVVVVVU1VVVVVVYAAAAABlVVVVVTI1VVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTIiNVVVVVYAAAAABlVVVVUyIjVVVVVWAAAAAAZVVVVVMiI1VVVVVgAAAAAGVVVVVTMzNVVVVVYAAAAAAGVXdVVVVVVVd1VgAAAAAABlcXdVVVVVVxd1YAAAAAAAZXdHVVVVVVd0dWAAAAAAAAZXdVZmZmZVd1YAAAAAAAAGVVVgAAAAZVVWAAAAAGAAAGZmAAAAAAZmYAAAAABmAAAAAAAAAAAAAAAAAAAAZmAAAAAAAAAAAAAAAAAAAGZmAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////////AAf//AAB//gAAP/wAAB/8AAAf/AAAH/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP/AAAH/wAAB/8AAAf/gAAP/4H8D/fD/h/z////8f////D////w=='), auto;
 }
+
 header {
 
   display: flex;
   width: 100%;
   justify-content: center;
   border: 2%;
-  
+
 
 }
 
@@ -37,8 +39,8 @@ h2 {
 }
 
 body {
-  
-  background: linear-gradient(#FFD6FF,#C8B6FF,#E7C6FF);
+
+  background: linear-gradient(#FFD6FF, #C8B6FF, #E7C6FF);
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -47,8 +49,9 @@ body {
   justify-content: center;
 
 }
-a{
-  
+
+a {
+
   text-decoration: none;
 }
 
@@ -60,16 +63,17 @@ a:visited {
   color: #000000;
   text-align: center;
   text-decoration: none;
-  
+
 
 }
 
 /* mouse over link */
 a:hover {
-  color:#BBD0FF;
+  color: #BBD0FF;
 }
 
-divanchor, divanchorbottom {
+divanchor,
+divanchorbottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -100,6 +104,7 @@ divlink {
   display: flex;
   justify-content: center;
 }
+
 footer {
   display: flexbox;
   flex-wrap: wrap;
@@ -111,7 +116,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5%;
-  background-color:#B8C0FF;
+  background-color: #B8C0FF;
   color: white;
   padding: 0.8%;
   box-shadow: 0px 0px 300px #C8B6FF;
@@ -126,6 +131,7 @@ p {
   font-size: medium;
 
 }
+
 .specialp {
   font-size: large;
 }
@@ -146,15 +152,16 @@ textarea {
 img {
   display: flex;
   box-shadow: 0px 0px 35px #000000;
-  max-width: 60%; 
+  max-width: 60%;
   height: auto;
   border-radius: 900px;
-  border: 10px  #000000;
+  border: 10px #000000;
   margin: 0 auto;
   justify-content: center;
 }
+
 divimage {
-  outline:90px #BBD0FF;
+  outline: 90px #BBD0FF;
   display: flex;
   flex-wrap: wrap;
   padding: 18%;
@@ -165,14 +172,14 @@ divimage {
 
 divportfolio {
   display: grid;
-  grid-template-columns: 
-    repeat (
-      auto-fit,
-      minmax(150px, 1fr)
-    );
+  grid-template-columns:
+    repeat (auto-fit,
+      minmax(150px, 1fr));
   gap: 32px;
 }
-divportfolio > img,figure{
+
+divportfolio>img,
+figure {
   border-radius: 8px;
   width: 100%;
   height: auto;
@@ -180,15 +187,17 @@ divportfolio > img,figure{
 
 
 }
-divbiografia{
 
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
+divbiografia {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
   gap: 15px;
 }
-divbiografia > img{
+
+divbiografia>img {
   border-radius: 8px;
   width: 300px;
   height: auto;
@@ -196,24 +205,29 @@ divbiografia > img{
 }
 
 /* menu hamburguesa*/
-burger > ul{
+burger>ul {
   display: none;
 
-  
+
 }
-burger > input {
+
+burger>input {
   display: none;
- }
-burger > input:checked  ~ ul {
+}
+
+burger>input:checked~ul {
   position: absolute;
-  top: 1%; left: 5%;
-  display:block;
+  top: 1%;
+  left: 5%;
+  display: block;
   transition: all 0.5s;
 }
-burger > label {
+
+burger>label {
   font-size: xx-large;
   position: absolute;
-  top: 1%; left: 5%;
+  top: 1%;
+  left: 5%;
   box-sizing: border-box;
   display: flex;
   width: 30px;
@@ -223,10 +237,11 @@ burger > label {
   text-align: center;
   user-select: none;
 }
+
 .li {
 
   display: flexbox;
-  background:#B8C0FF ;
+  background: #B8C0FF;
   margin: 0 auto;
   padding: 10px;
   list-style: none;
@@ -240,7 +255,9 @@ formulario {
   justify-content: center;
   align-items: center;
 }
-formulario > input[type=text], select {
+
+formulario>input[type=text],
+select {
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -249,9 +266,10 @@ formulario > input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 select {
   width: 30%;
-  
+
   margin: 20px auto;
   display: flexbox;
   justify-content: center;
@@ -259,7 +277,8 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-formulario > input[type=submit] {
+
+formulario>input[type=submit] {
   width: 60%;
   background-color: #4CAF50;
   color: white;
@@ -270,7 +289,7 @@ formulario > input[type=submit] {
   cursor: pointer;
 }
 
-formulario > input[type=submit]:hover {
+formulario>input[type=submit]:hover {
   background-color: #45a049;
 }
 
@@ -279,5 +298,3 @@ formulariodiv {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
-
