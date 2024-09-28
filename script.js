@@ -35,15 +35,7 @@ if (color.length < 3) {
 //comprobacion de si hay errores
 if (msj.length != 0) {
         alert(msj); //imprime mensaje final de error
-        //document.body.innerHTML += msj;
-        let p = document.createElement("pre");
-        let mensaje = document.createTextNode(msj);
-        p.style.color = "#DD1C1A";
-        p.style.fontSize = "16px";
-        p.appendChild(mensaje);
-    
-        document.getElementById("contact").appendChild(p); // dibuja resultado
-      }  else {
+      } else {
         alert("Se han enviado correctamente tus respuestas, gracias! :)")
     event.target.submit();
     }
