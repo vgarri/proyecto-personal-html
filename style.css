@@ -1,4 +1,5 @@
 :root {
+  /* https://coolors.co/palette/ffd6ff-e7c6ff-c8b6ff-b8c0ff-bbd0ff*/
   --rosa: #FFD6FF;
   --rosa2: #E7C6FF;
   --lila: #C8B6FF;
@@ -38,8 +39,21 @@ h2 {
   margin: 0 auto;
 }
 
-body {
+h3 {
+  width: 60%;
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10%;
+}
 
+h6 {
+  visibility: hidden;
+}
+
+body {
+  height: 100%;
   background: linear-gradient(#FFD6FF, #C8B6FF, #E7C6FF);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -103,6 +117,7 @@ divlink {
 .divtext {
   display: flex;
   justify-content: center;
+  padding: 5%;
 }
 
 footer {
@@ -120,7 +135,8 @@ footer {
   color: white;
   padding: 0.8%;
   box-shadow: 0px 0px 300px #C8B6FF;
-  gap: 50px;
+
+  margin-top: 30%;
 }
 
 
@@ -130,6 +146,10 @@ p {
   width: 85%;
   font-size: medium;
 
+}
+
+pform {
+  font-weight: bolder;
 }
 
 .specialp {
@@ -178,8 +198,10 @@ divportfolio {
   gap: 32px;
 }
 
-divportfolio>img,
-figure {
+divportfolio>iframe {}
+
+
+divportfolio>img {
   border-radius: 8px;
   width: 100%;
   height: auto;
@@ -197,11 +219,34 @@ divbiografia {
   gap: 15px;
 }
 
-divbiografia>img {
+divbiografia>figure {
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+
+}
+
+figure>img {
   border-radius: 8px;
   width: 300px;
   height: auto;
-  box-shadow: 0px 0px 30px #BBD0FF;
+
+}
+
+figure>figcaption {
+  margin: auto;
+  padding: 10%;
+  font-weight: bold;
+
+}
+
+divfigure {
+  display: flex;
+  border-radius: 8px;
+  width: 33%;
+  height: auto;
+
+
 }
 
 /* menu hamburguesa*/
@@ -297,4 +342,26 @@ formulariodiv {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+
+}
+
+@media only screen and (min-width: 871px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  pform {
+    font-size: x-large;
+  }
+
+  p {
+    font-size: x-large;
+  }
 }
