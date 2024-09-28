@@ -200,14 +200,28 @@ divportfolio {
 
 
 
-divportfolio>img {
+divportfolio>img{
   border-radius: 8px;
   width: 100%;
   height: auto;
   box-shadow: 0px 0px 30px #BBD0FF;
-
+  view-timeline-name: --image; /*todo este codigo es referente a la animacion de las imagenes */
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%; /* desde que se renderize el 25% hasta el 50% reproduce la animacion, a partir del 50 full render*/
+  animation-fill-mode: both; /*esto es para que la animacion sea cuando scrolleas para arriba y para abajo */
 
 }
+divportfolio > iframe {
+  view-timeline-name: --image; /*todo este codigo es referente a la animacion de los reproductores*/
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 2% cover 20%; /* desde que se renderize el 2% hasta el 20% reproduce la animacion, a partir del 50 full render*/
+  animation-fill-mode: both; /*esto es para que la animacion sea cuando scrolleas para arriba y para abajo */
+}
+
 
 divbiografia {
 
@@ -364,3 +378,16 @@ iframe {
     font-size: x-large;
   }
 }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+
+}
+
