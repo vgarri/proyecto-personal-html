@@ -190,6 +190,17 @@ divimage {
   width: 100%;
 }
 
+divpost {
+  outline: 90px #BBD0FF;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18%;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+
+}
+
 divportfolio {
   display: grid;
   grid-template-columns:
@@ -315,7 +326,7 @@ formulario {
 }
 
 formulario>input[type=text],
-select {
+select{
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -335,6 +346,15 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+password {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 formulario>input[type=submit] {
   width: 60%;
@@ -350,6 +370,15 @@ formulario>input[type=submit] {
 formulario>input[type=submit]:hover {
   background-color: #45a049;
 }
+formulario>input[type=password] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 formulariodiv {
   border-radius: 5px;
@@ -363,6 +392,36 @@ iframe {
   align-items: center;
   margin: 10% auto;
 
+}
+
+superboton > button {
+  border: 0;
+  background-image: linear-gradient( 
+  #C8B6FF,
+  #B8C0FF,
+  );
+  border-radius: 8px;
+  color: #B8C0FF;
+  display: flex;
+  font-size: 20px;
+  padding: 6px;
+  cursor: pointer;
+  transition: .3s;
+}
+button span {
+  color:#111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3s;
+}
+button:hover span{
+  background: none;
+}
+button:active{
+  transform: scale(0.9);
+}
+span > a{
+  color: #B8C0FF;
 }
 
 @media only screen and (min-width: 871px) {
