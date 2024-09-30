@@ -1,7 +1,8 @@
 
 # Proyecto Landing Page 👾
 # Haz click aquí para ir a la web:
-https://vgarri.github.io/proyecto-personal-html/contacto.html
+https://vgarri.github.io/proyecto-personal-html/index.html
+
 
 
 ## Descripción:
@@ -14,6 +15,12 @@ https://vgarri.github.io/proyecto-personal-html/contacto.html
 * Validación de formularios
 * Mediaqueries
 * FlexBox y diseño responsivo
+
+## Paleta de colores:
+La paleta de colores elegida para este proyecto es la siguiente:
+<div>
+<a href="https://ibb.co/CH64J3B"><img src="https://i.ibb.co/87bGzLM/Paleta-landing-page.png" alt="Paleta-landing-page" border="0"></a>
+</div>
 
 ## Futuras implementaciones en el proyecto:
 * Mejoras en el script de validación
