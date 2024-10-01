@@ -34,7 +34,7 @@ Debe ir al final, detrás de un punto
 *La expresión regular sería algo como: expresionregular@expresionregular.expresionregular. Ej: elena@gmail.com; pepe03@hotmail.es Crearemos un formulario que llamará a la función checkEmail. Esta función será la que ejecute la expresión regular. Se le pasará como argumento el valor del email recogido.
 Patrón RegExp: expresionregular@expresionregular.expresionregular
 */
-let regExp = new RegExp ( /^[a-zA-Z0-9._]+@[a-zA-Z0-9.]+.[a-zA-Z]{2,}$/);
+let regExp = new RegExp ( /^[a-zA-Z0-9_]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/);
 let regExpPw = new RegExp (/^[a-zA-Z0-9!@#$%&]{6,20}$/)
 if(regExp.test(email) == false){
     console.log("Introduce un email válido.");
